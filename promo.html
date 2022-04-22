@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./css/style.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+        crossorigin="anonymous"></script>
+    <script src="./src/index.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Promoções [GoodPay]</title>
+
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-light bg-light stiky">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="./app.html">
+                    <img src="./img/goodplayH.png" alt="Logo GoodPay" width="130" height="60">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <img src="./img/GoodPay.png" alt="Logo Principal" width="80" height="80">
+                        <h6 class="offcanvas-title" id="offcanvasNavbarLabel">Menu [GoodPay App]</h6>
+                        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <form class="d-flex">
+                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-outline-success" type="submit">Search</button>
+                        </form>
+                        <div class="accordion accordion-flush" id="accordionFlushExample" style="margin-top: 20px;">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="flush-headingOne">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#flush-collapseOne" aria-expanded="false"
+                                        aria-controls="flush-collapseOne">
+                                        Entre no GoodPay
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseOne" class="accordion-collapse collapse"
+                                    aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body">
+                                        <form action="" class="ms-4">
+                                            <div class="input-group mb-3">
+                                                <span class="input-group-text" id="basic-addon1">E-Mail</span>
+                                                <input id="email" type="email" class="form-control"
+                                                    placeholder="Entre com seu e-mail" aria-label="email"
+                                                    aria-describedby="basic-addon1">
+                                            </div>
+                                            <div class="input-group mb-3">
+                                                <span class="input-group-text" id="basic-addon1">Senha</span>
+                                                <input id="senha" type="password" class="form-control"
+                                                    placeholder="Senha de Login" aria-label="senha"
+                                                    aria-describedby="basic-addon1">
+                                            </div>
+                                            <div class="d-grid gap-2">
+                                                <button class="btn btn-outline-info" type="button" onclick="rotaLogin()"
+                                                    data-bs-dismiss="offcanvas">Entrar</button>
+                                                <button class="btn btn-outline-success" type="button"
+                                                    onclick="rotaCadastro()"
+                                                    data-bs-dismiss="offcanvas">Cadastrar</button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="flush-headingTwo">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#flush-collapseTwo" aria-expanded="false"
+                                        aria-controls="flush-collapseTwo">
+                                        Regras de uso do Aplicativo
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                                    aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body">
+                                        <h5>DevTeam <span class="badge bg-success">BCW18</span> </h5>
+                                        <p>
+                                            Este aplicativo não tem conexão com o banco de dados, o desenvolvimento
+                                            deste aplicativo tem como
+                                            finalidade o aprendizado de aplicações e interface web. Assim o uso deste
+                                            aplicativo deve ser
+                                            pensado como um
+                                            protótipo não funcional.
+                                        </p>
+                                        <p>
+                                            A aplicação usa elementos de personalização em Bootstrap 5, com Javascript
+                                            local,
+                                            os dados utilizados para e adicionados neste interface não são enviados a um
+                                            serviço.
+                                        </p>
+                                        <p class="badge bg-secondary">
+                                            BCW18:(FullStack)
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="flush-headingThree">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#flush-collapseThree" aria-expanded="false"
+                                        aria-controls="flush-collapseThree">
+                                        BCW 18 [Java Full Stack]
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseThree" class="accordion-collapse collapse"
+                                    aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body">
+                                        <p>
+                                            Curso de Deselvolvimento web baseado em Java Spring no Back-End com Angular
+                                            Typescript no
+                                            Front-End. Desenvolvido com metodologias agilistas e usando como base
+                                            Projetos em DevOps.
+                                        </p>
+                                        <div class="text-center">
+                                            <img src="./img/logo-itlean.png" class="rounded" alt="Logo da SoulCode"
+                                                width="210" height="65">
+                                            <img src="./img/logo-tnt.png" class="rounded" alt="Logo da SoulCode"
+                                                width="120" height="90">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="flush-headingFour">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#flush-collapseFour" aria-expanded="false"
+                                        aria-controls="flush-collapseFour">
+                                        SoulCode Academy
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseFour" class="accordion-collapse collapse"
+                                    aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body">
+                                        <p>
+                                            Tech For Good: 5 pilares que vão transformar o mundo: Educação, Diversidade,
+                                            Saúde, Longevidade e
+                                            Sustentabilidade
+                                        </p>
+                                        <p>
+                                            Nossa missão é a formação e o emprego, aplicando os 5 pilares do "Tech For
+                                            Good". Ser uma escola
+                                            inclusiva, que, através de nossa metodologia ágil, possa capacitar e educar
+                                            em tecnologia, gerar
+                                            oportunidades de emprego para todas as gerações, no início ou na
+                                            ressignificação de carreira, com
+                                            foco em diversidade e equidade. Numa profissão que fomente o bem-estar
+                                            físico e mental, permitindo
+                                            o
+                                            equilíbrio entre a vida profissional e pessoal, através do trabalho remoto,
+                                            com flexibilidade de
+                                            horários, além de ser um negócio sustentável e responsável, socialmente.
+                                        </p>
+                                        <p class="badge bg-primary">
+                                            Team SoulCode
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="card-group container d-flex flex-column mt-5">
+            <div class="card mt-5 mb-5" id="idCardSimples">
+                <img src="img/BannerGoodPay.png" class="card-img-top" alt="Imagem do goodpay">
+                <div class="card-body">
+                    <h4 class="card-title">Vem para o simples: GoodPay</h4>
+                    <p class="card-text">Com o GoodPay cash back você economiza e na compra com nossos parceiros ainda
+                        receberá dinheiro
+                        de volta. Mais de 1645 parceiros de compras vão te ajudar a voltar para o saldo
+                        positivo em seu
+                        caixa. As compras com cash back deveram ser feitas em débito ou dinheiro e o retorno
+                        vai para o
+                        porquinho de seu caixa.</p>
+                </div>
+            </div>
+            <div class="card mt-5 mb-5" id="idCardVerde">
+                <img src="img/BannerGoodPay2.png" class="card-img-top" alt="Banner GoodPay Vem para o simples">
+                <div class="card-body">
+                    <h4 class="card-title">Volte para o lado verde da vida</h4>
+                    <p class="card-text" id="idMoneyForLive">Vamos descomplicar suas finanças, o aplicativo GoodPay tem
+                        a proposta de
+                        organizar
+                        suas finanças com uso de tecnologia Javascript. Ele irá montar e organizar seus
+                        gastos usando uma interface Bootstrap fluida e bem desenvolvida para facilitar seu
+                        caixa pessoal. A aplicação tem uso simples e servirá para organiozar em um vetor de
+                        obejtos suas entradas e saídas baseadas no uso de cards e alertas para seu
+                        entendimento fácil do uso de suas receitas e gastos.</p>
+                </div>
+            </div>
+            <div class="card mt-5 mb-5" id="idCardPig">
+                <img src="img/BannerGoodPay3.png" class="card-img-top" alt="Banner GoodPay The Pig Time">
+                <div class="card-body">
+                    <h4 class="card-title">The Pig Time</h4>
+                    <p class="card-text" id="idMoneyForLive">Com a assinatura do Pig Time você terá mais de 50
+                        especialistas em finanças para
+                        dicas de como economizar em cada compra na sua vida. Ainda terá 4 reais de retorno
+                        para cada vez que for sorteada no Pig Time e ao final de 1 ano poderá ganhar 5x seu
+                        proquinho. Ecomizando e investindo ao mesmo tempo na GoodPay App.</p>
+                </div>
+            </div>
+            <div class="card mt-5 mb-5" id="idCardFamilia">
+                <img src="img/BannerGoodPay4.png" class="card-img-top" alt="Banner GoodPay Familia">
+                <div class="card-body">
+                    <h4 class="card-title">Família é o que importa</h4>
+                    <p class="card-text">Com os serviços básicos da GoodPay poderá guardar dinheiro desde o nascimento
+                        de seu filho caso ele passe em uma instituição com nota comprada no Mec Enem maior que 800 você
+                        tem a chance de triplicar seu porquinho. Assim dar aquele presente para quem você planeja sua
+                        vida toda. Entre nesta capitalização por R$35 reais e ganhe algo incalculável.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+<footer>
+    <!--Script Loaders-->
+    <script src="./src/index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+        crossorigin="anonymous"></script>
+</footer>
+
+</html>

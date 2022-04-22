@@ -2,3 +2,98 @@
     padding: 5px;
     background-color: blue;
 }
+
+.trancaTela {
+    max-width: 1080px;
+    margin: 0 auto;
+}
+
+.row {
+    text-align: center;
+}
+
+.main {
+    margin-top: 10%;
+}
+
+#text {
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    resize: vertical;
+    line-height: 28px;
+}
+
+#email {
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    resize: vertical;
+    line-height: 28px;
+}
+
+#senha {
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    resize: vertical;
+    line-height: 28px;
+}
+
+.checkbox {
+    margin-right: 100%;
+}
+
+.btn-primary {
+    background-color: #6C757D;
+    border-radius: 4px;
+    padding: 15px;
+    border: none;
+    margin-bottom: 20px;
+}
+
+.btn btn-outline-success:hover {
+    background-color: #53595e;
+    transition: 0.5s;
+}
+
+.titulocadastro {
+    margin-bottom: 20px;
+    margin-left: 35px;
+    margin-right: 0px;
+    width: 90%;
+    text-align: center;
+}
+
+.linhacriarconta {
+    border-bottom: 1px solid #6c757d61;
+    margin-bottom: 15px;
+    margin-right: 0px;
+    margin-left: 23.5px;
+    text-align: center;
+}
+
+.form-control {
+    height: 55px;
+}
+
+.imgcadastro {
+    height: 550px;
+}
+
+.façalogin {
+    text-decoration: none;
+}
+
+.border-form {
+    margin-top: 10%;
+    border: 1px solid rgba(58, 58, 58, 0.436);
+    border-radius: 10px;
+}
+
+.preencha {
+    font-weight: bold;
+    text-align: justify;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.1rem;
+}
